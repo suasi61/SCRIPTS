@@ -21,7 +21,7 @@ while [ $intents -gt 0 ]; do
     else
         echo "CALENT"
     fi
-    $intents=$(( ${intents} - 1 )) # Corregir la disminució dels intents
+    intents=$(( $((intents)) - 1 )) # Corregir la disminució dels intents
 done
 
 echo "Has acabat amb els tres intents. El nombre a adivinar era: ${adivina}"
